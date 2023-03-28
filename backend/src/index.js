@@ -19,10 +19,6 @@ const initDB = async () => {
   mongoose.connect(
     `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_URL}?retryWrites=true&w=majority`,
     {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-      useCreateIndex: true,
       dbName: DB_NAME,
     }
   )
